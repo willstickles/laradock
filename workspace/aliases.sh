@@ -42,6 +42,14 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 alias home="cd ~"
 
+# Docker Aliases
+alias docker-nginx="cd ~/Development/laradock && docker compose up -d nginx mysql redis phpmyadmin workspace"
+alias docker-workspace="cd ~/Development/laradock && docker compose exec workspace bash"
+alias docker-stop="cd ~/Development/laradock && docker compose stop "
+alias docker-workspace="cd ~/Development/laradock && docker compose build --no-cache "
+alias docker-up="cd ~/Development/laradock && docker compose up -d "
+alias development="cd ~/Development"
+
 alias h="history"
 alias j="jobs"
 alias e='exit'
